@@ -25,8 +25,8 @@ public class NFileServer extends Thread
         // starts server and waits for a connection
         try
         {
-            if(this._DEBUG) System.out.println("Server started");
-            if(this._DEBUG) System.out.println("Waiting for a client ...");
+            this._debug("Server started");
+            this._debug("Waiting for a client ...");
 
             // takes input from the client socket 
             in = new DataInputStream(
@@ -41,8 +41,12 @@ public class NFileServer extends Thread
         }
         catch(IOException i)
         {
-            System.out.println(i);
+            this._debug(i.toString());
         }
+    }
+
+    private void _debug(String msg) {
+        if(this._DEBUG) System.out.println(msg);
     }
 
     public void run() {
@@ -50,7 +54,7 @@ public class NFileServer extends Thread
     }
 
     private void stopService() {
-        if(this._DEBUG) System.out.println("Closing connection");
+        this._debug("Closing connection");
 
         try {
             // close connection
@@ -66,17 +70,17 @@ public class NFileServer extends Thread
     private void startService() {
         String line = "";
 
-        if(this._DEBUG) System.out.println("Client accepted");
+        this._debug("Client accepted");
 
         // reads message from client until "Over" is sent
         while (line != null && !line.equals("Over")) {
             try {
                 line = in.readUTF();
-                System.out.println(line);
+                this._debug(line);
 
                 StringBuilder stringBuilder = this.handlers(line);
 
-                System.out.println(stringBuilder.toString());
+                this._debug(stringBuilder.toString());
                 out.writeUTF(stringBuilder.toString());
             }
             catch (IOException i) {
@@ -158,7 +162,7 @@ public class NFileServer extends Thread
 
     public static void main_multi(String args[]) {
         int i =0;
-        Boolean _DEBUG = true;
+        Boolean _DEBUG = false;
 
         Socket socket = null;
         ServerSocket server = null;
