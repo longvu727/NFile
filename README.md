@@ -12,7 +12,7 @@ java NFileClient.java
 
 ###### Sample run
 ```
-long@long-pc:~/IdeaProjects/git/NFile/src/main/java$ java NFileClient.java 
+long@long-pc:$ java NFileClient.java 
 Message:                                                                                          
 Hi Client                                                                                         
 hello                                                                                             
