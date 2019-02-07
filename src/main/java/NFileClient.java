@@ -41,7 +41,9 @@ public class NFileClient {
             try {
                 DataInputStream ois = new DataInputStream(socket.getInputStream());
                 String message = ois.readUTF();
-                System.out.println("Message: " + message);
+
+                System.out.println("Message:");
+                System.out.println(message);
 
                 line = input.nextLine();
                 out.writeUTF(line);
