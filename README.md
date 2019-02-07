@@ -1,12 +1,12 @@
-######Start Server
+###### Start Server
 `cd src/main/resources
 java ../java/NFileServer.java`
 
-######Start Client
+###### Start Client
 `cd src/main/java
 java NFileClient.java`
 
-######Sample run
+###### Sample run
 `long@long-pc:~/IdeaProjects/git/NFile/src/main/java$ java NFileClient.java 
 Message:                                                                                          
 Hi Client                                                                                         
