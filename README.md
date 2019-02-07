@@ -1,35 +1,32 @@
-<b>Start Server</b></br>
-  cd src/main/resources</br>
-  java ../java/NFileServer.java</br>
+**Start Server**
+cd src/main/resources
+java ../java/NFileServer.java
 
-<b>Start Client</b>
-  cd src/main/java</br>
-  java NFileClient.java</br>
+**Start Client **
+_cd src/main/java
+java NFileClient.java_
 
+**Sample run**
 
-
-hiMessage:
-Hi Client 
-
-Message:
-Unknown Command
-ls
-Message:
-Unknown Command
-get
-Message:
-error
-get djks
-Message:
-error
-index
-Message:
-b.txt
-c.txt
-a.txt
-
+_long@long-pc:~/IdeaProjects/git/NFile/src/main/java$ java NFileClient.java 
+Message:                                                                                          
+Hi Client                                                                                         
+hello                                                                                             
+Message:                                                                                          
+Unknown Command                                                                                   
+index                                                                                             
+Message:                                                                                          
+b.txt                                                                                             
+c.txt                                                                                             
+a.txt                                                                                             
+                                                                                                  
+get                                                                                               
+Message:                                                                                          
+error                                                                                             
 get a.txt
 Message:
 a
+_
 
-Over
+
+
