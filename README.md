@@ -1,10 +1,10 @@
-<b>Start Server</b>
-  cd src/main/resources
-  java ../java/NFileServer.java
+<b>Start Server</b></br>
+  cd src/main/resources</br>
+  java ../java/NFileServer.java</br>
 
 <b>Start Client</b>
-  cd src/main/java
-  java NFileClient.java
+  cd src/main/java</br>
+  java NFileClient.java</br>
 
 
 
