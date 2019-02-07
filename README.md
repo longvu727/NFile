@@ -1,13 +1,13 @@
 ###### Start Server
-`cd src/main/resources
-java ../java/NFileServer.java`
+```cd src/main/resources
+java ../java/NFileServer.java```
 
 ###### Start Client
-`cd src/main/java
-java NFileClient.java`
+```cd src/main/java
+java NFileClient.java```
 
 ###### Sample run
-`long@long-pc:~/IdeaProjects/git/NFile/src/main/java$ java NFileClient.java 
+```long@long-pc:~/IdeaProjects/git/NFile/src/main/java$ java NFileClient.java 
 Message:                                                                                          
 Hi Client                                                                                         
 hello                                                                                             
@@ -24,7 +24,4 @@ Message:
 error                                                                                             
 get a.txt
 Message:
-a`
-
-
-
+a```
